@@ -1,0 +1,47 @@
+Buffer Alignment    : 4096
+Copy Size           : 4096 * 1024
+
+Cachable Stores 4x VEC loop (ymm)
+     3,775,971,458      cycles
+        47,910,359      l2_rqsts_all_demand_miss
+       341,409,330      l2_rqsts_all_demand_references
+       339,270,529      l2_rqsts_all_rfo
+       296,041,947      l2_rqsts_rfo_hit
+        44,148,997      l2_rqsts_rfo_miss
+            10,422      offcore_requests_all_data_rd
+     1,318,858,737      offcore_requests_all_requests
+             2,269      offcore_requests_demand_data_rd
+       359,521,805      offcore_requests_demand_rfo
+           730,152      offcore_requests_outstanding_all_data_rd
+           178,234      offcore_requests_outstanding_demand_data_rd
+     8,381,256,032      offcore_requests_outstanding_demand_rfo
+
+Non-Cachable Stores 4x VEC loop (ymm)
+     3,711,428,803      cycles
+               122      l2_rqsts_all_demand_miss
+             5,528      l2_rqsts_all_demand_references
+                 0      l2_rqsts_all_rfo
+                 0      l2_rqsts_rfo_hit
+                 0      l2_rqsts_rfo_miss
+               137      offcore_requests_all_data_rd
+       658,635,996      offcore_requests_all_requests
+                 9      offcore_requests_demand_data_rd
+                 0      offcore_requests_demand_rfo
+             3,675      offcore_requests_outstanding_all_data_rd
+               506      offcore_requests_outstanding_demand_data_rd
+                 0      offcore_requests_outstanding_demand_rfo
+
+rep stosb
+     4,327,517,530      cycles
+       653,345,685      l2_rqsts_all_demand_miss
+       648,469,967      l2_rqsts_all_demand_references
+       643,957,722      l2_rqsts_all_rfo
+            10,201      l2_rqsts_rfo_hit
+       647,865,311      l2_rqsts_rfo_miss
+            13,836      offcore_requests_all_data_rd
+     1,319,721,967      offcore_requests_all_requests
+             4,114      offcore_requests_demand_data_rd
+       665,098,059      offcore_requests_demand_rfo
+         1,058,160      offcore_requests_outstanding_all_data_rd
+           178,092      offcore_requests_outstanding_demand_data_rd
+    32,885,052,293      offcore_requests_outstanding_demand_rfo
