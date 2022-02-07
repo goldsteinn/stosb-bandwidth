@@ -1,0 +1,78 @@
+######################################################################
+Cachable VEC Loop
+
+ Performance counter stats for './stosb-low-bandwidth':
+
+     3,995,759,145      cycles                                                        (30.50%)
+       154,985,918      l2_rqsts_all_demand_miss                                      (30.95%)
+       465,417,294      l2_rqsts_all_demand_references                                     (31.39%)
+       464,195,578      l2_rqsts_all_rfo                                              (31.48%)
+       311,043,445      l2_rqsts_rfo_hit                                              (31.43%)
+       155,654,030      l2_rqsts_rfo_miss                                             (30.99%)
+           132,513      offcore_requests_all_data_rd                                     (30.54%)
+     1,575,748,851      offcore_requests_all_requests                                     (30.45%)
+            36,072      offcore_requests_demand_data_rd                                     (30.46%)
+       341,617,122      offcore_requests_demand_rfo                                     (30.45%)
+         5,365,375      offcore_requests_outstanding_all_data_rd                                     (30.45%)
+         1,576,109      offcore_requests_outstanding_demand_data_rd                                     (30.45%)
+     8,493,944,859      offcore_requests_outstanding_demand_rfo                                     (30.45%)
+
+       0.893373684 seconds time elapsed
+
+       0.893374000 seconds user
+       0.000000000 seconds sys
+
+
+######################################################################
+######################################################################
+Non-Cachable VEC Loop
+
+ Performance counter stats for './stosb-low-bandwidth':
+
+     5,416,928,378      cycles                                                        (30.57%)
+           279,642      l2_rqsts_all_demand_miss                                      (30.90%)
+           523,049      l2_rqsts_all_demand_references                                     (31.23%)
+           196,945      l2_rqsts_all_rfo                                              (31.56%)
+             4,289      l2_rqsts_rfo_hit                                              (31.45%)
+             2,146      l2_rqsts_rfo_miss                                             (31.12%)
+            33,155      offcore_requests_all_data_rd                                     (30.77%)
+       657,454,224      offcore_requests_all_requests                                     (30.44%)
+             3,988      offcore_requests_demand_data_rd                                     (30.39%)
+             1,165      offcore_requests_demand_rfo                                     (30.39%)
+         3,292,096      offcore_requests_outstanding_all_data_rd                                     (30.40%)
+           723,247      offcore_requests_outstanding_demand_data_rd                                     (30.40%)
+           110,688      offcore_requests_outstanding_demand_rfo                                     (30.40%)
+
+       1.210889943 seconds time elapsed
+
+       1.210722000 seconds user
+       0.000000000 seconds sys
+
+
+######################################################################
+######################################################################
+rep stosb
+
+ Performance counter stats for './stosb-low-bandwidth':
+
+     3,043,446,483      cycles                                                        (30.98%)
+       645,672,857      l2_rqsts_all_demand_miss                                      (31.26%)
+       653,097,826      l2_rqsts_all_demand_references                                     (31.26%)
+       651,617,618      l2_rqsts_all_rfo                                              (31.26%)
+         7,569,571      l2_rqsts_rfo_hit                                              (30.83%)
+       650,174,464      l2_rqsts_rfo_miss                                             (30.55%)
+            16,509      offcore_requests_all_data_rd                                     (30.55%)
+     1,298,695,637      offcore_requests_all_requests                                     (30.55%)
+             5,832      offcore_requests_demand_data_rd                                     (30.55%)
+       647,263,365      offcore_requests_demand_rfo                                     (30.55%)
+         5,373,909      offcore_requests_outstanding_all_data_rd                                     (30.55%)
+         1,233,830      offcore_requests_outstanding_demand_data_rd                                     (30.55%)
+    17,811,087,324      offcore_requests_outstanding_demand_rfo                                     (30.55%)
+
+       0.681011916 seconds time elapsed
+
+       0.677013000 seconds user
+       0.004005000 seconds sys
+
+
+######################################################################
